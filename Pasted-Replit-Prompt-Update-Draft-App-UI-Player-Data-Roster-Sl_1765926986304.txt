@@ -1,0 +1,225 @@
+Replit Prompt: Update Draft App UI + Player Data + Roster Slotting
+
+Modify the existing 10-team dynasty draft web app with the following changes. Keep all prior league rules (fixed order Team 1→10 every round, ML 16 rounds 4-year contracts, MiL 10 rounds 2-year contracts, OTL tokens tradable and usable only in ML, pick trading, all pick slots occur).
+
+1) Navigation and Page Layout
+
+Create a top navigation with tabs/pages:
+
+Players (this becomes the default landing page /)
+
+Draft Board (move the draft board grid here)
+
+Teams / Rosters (roster management and viewing)
+
+Pick Log (optional separate tab; can also be shown in Players)
+
+Admin (/admin remains)
+
+The Players page should show:
+
+Player list tables (Batters / Pitchers / OTL Batters / OTL Pitchers tabs within the page)
+
+Current pick + timer always visible at top (sticky header)
+
+“Draft” actions from the player rows
+
+2) Player Data Schema (from uploaded data)
+
+All stats and attributes will be provided in the uploaded data. Implement import so the app dynamically reads and stores these fields and they are usable for sorting and filtering.
+
+Batters must include:
+
+Identity: id (preferred), name, positions (multi), bats (R/L/S), teamTag (optional)
+
+Splits vs L and vs R: store as splits.vsL and splits.vsR objects (all numeric fields included)
+
+Additional sortable/filterable attributes:
+
+Speed
+
+SB
+
+Range
+
+Error
+
+Arm
+
+Durability
+
+Clutch
+
+Limits (could be L and R limits; support both if present)
+
+Pitchers must include:
+
+Identity: id (preferred), name, role (SP/RP), throws (R/L), teamTag (optional)
+
+Splits vs L and vs R: store as splits.vsL and splits.vsR
+
+Additional sortable/filterable attributes:
+
+Endurance
+
+Hold
+
+Jam
+
+On
+
+Off
+
+Durability
+
+Innings
+
+3) Player Filtering + Sorting (must be robust)
+
+On the Players page, implement:
+
+Common filters:
+
+Search by name
+
+Drafted/Available
+
+In-league vs OTL tabs remain separate
+
+Positions (multi-select)
+
+Handedness:
+
+Batters: bats
+
+Pitchers: throws
+
+Role filter for pitchers: SP / RP
+
+Numeric filters (range sliders or min/max inputs):
+
+For batters: Speed, SB, Range, Error, Arm, Durability, Clutch, Limits (and any additional numeric columns present)
+
+For pitchers: Endurance, Hold, Jam, On, Off, Durability, Innings (and any additional numeric columns present)
+
+Sorting:
+
+Allow sorting by ANY numeric stat/attribute from uploaded data, including split fields.
+
+Sorting UI:
+
+Choose sort field (dropdown populated dynamically from available columns for that tab)
+
+Choose split context for split-based fields:
+
+Overall (if provided)
+
+vsL
+
+vsR
+
+Asc/desc toggle
+
+Optional secondary sort (nice to have)
+
+Implementation detail:
+
+Treat player stats as a flattened searchable/sortable map for the active view, but preserve the original nested structure for storage.
+
+Ensure no empty-string values are used in SelectItem values (Radix/shadcn constraint).
+
+4) Drafting Behavior with Splits
+
+Drafting itself does not require choosing vsL/vsR; splits are displayed and sortable/filterable.
+
+Show a compact split display in the table row (e.g., small columns or expandable row):
+
+Batters: key split stats vsL vs vsR (whatever is in upload)
+
+Pitchers: key split stats vsL vs vsR
+
+Keep the “OTL token must be declared” rule enforced only during ML picks.
+
+5) Rosters: Slot Assignments + Drag/Drop or Move Controls
+
+On Teams / Rosters tab:
+
+Each team has roster sections with fixed slots:
+
+Hitters (9 starting positions):
+
+C, 1B, 2B, SS, 3B, LF, CF, RF, DH
+
+Pitchers:
+
+5 SP slots (SP1–SP5)
+
+4 RP slots (RP1–RP4)
+
+Bench:
+
+All other rostered players not assigned to a starting slot
+
+Roster requirements:
+
+Ability to move players between slots and bench:
+
+Drag & drop preferred, but “Move to…” dropdown is acceptable for MVP
+
+Enforce basic eligibility:
+
+A batter can only be placed into a slot if their positions includes that slot (DH accepts any batter)
+
+Pitchers: SP slots require role=SP; RP slots require role=RP
+
+Persist slot assignments in DB:
+
+teamLineupSlots object mapping slot → playerId (or null)
+
+Provide a “Reset lineup” action to clear slots back to bench.
+
+6) Import Format (Admin)
+
+Admin page must allow upload/paste of:
+
+Team names
+
+Keepers by team
+
+Player pool CSV for batters and pitchers (or combined with a type column)
+
+OTL player CSV (optional) or a way to mark players as OTL
+
+Parsing rules:
+
+Prefer playerId if provided.
+
+If only names provided, normalize and warn on duplicates.
+
+All stat columns from the CSV should be stored and made available for sorting/filtering automatically.
+
+7) UI Expectation
+
+Players page is optimized for draft night:
+
+fast filtering/sorting
+
+clean tables
+
+sticky header with “On the Clock”, timer, current pick owner, and commissioner controls (if admin)
+
+Draft Board tab shows the grid and is read-only for most users (commissioner can still edit picks)
+
+8) Keep Existing Features
+
+Real-time sync via Socket.IO
+
+SQLite persistence
+
+Pick trading and OTL token trading (commissioner-controlled)
+
+Undo/edit picks, jump-to-pick repair tool
+
+Export CSV for pick log and rosters including contract years and OTL usage
+
+Deliver the updated project code with these changes implemented.

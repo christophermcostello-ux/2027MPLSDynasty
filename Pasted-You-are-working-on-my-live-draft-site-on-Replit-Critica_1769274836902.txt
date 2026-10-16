@@ -1,0 +1,36 @@
+You are working on my live draft site on Replit. Critical bug: the live room at /live/dynasty2025 syncs across browsers, but when I navigate to other tabs/pages in the site and come back, the picks disappear or revert to local/mock state. I need the live room to persist across ALL tabs/routes and never be overwritten by mock/local state.
+
+DO THIS NOW (highest priority):
+1) Make /live/:roomId (e.g. /live/dynasty2025) the single source of truth:
+   - Picks and draft state MUST live server-side (DB or existing server store) keyed by roomId.
+   - On any page load/mount, rehydrate by calling GET /api/draft/:roomId/state.
+   - Never use localStorage as the source of truth for live picks (localStorage may only store UI preferences like selected team).
+
+2) Prevent other tabs/pages from resetting or overwriting the live draft:
+   - Search the codebase for any draft initialization/reset that runs on route/tab change
+     (e.g. resetDraft(), setDraftState(initial), localStorage.removeItem, overwriting draftState keys).
+   - Ensure mock pages and live pages DO NOT share the same storage keys or state container.
+   - Live mode must never write to the same localStorage key used by mocks.
+
+3) Persist roomId across the whole site:
+   - When the user is in a live room, keep roomId in global app state and/or sessionStorage (activeRoomId),
+     and/or propagate via URL query param (?roomId=dynasty2025) when navigating to other tabs.
+   - All tabs/routes that show draft context must read the same roomId and request the same server state.
+
+4) Update the UI logic:
+   - All draft-related tabs (Hitters, Pitchers, Draft board, etc.) should read from the same shared live state store
+     that is hydrated from GET /api/draft/:roomId/state and updated via polling (every 1–2s) or existing realtime.
+   - When leaving and returning to /live/:roomId, it must immediately reload the correct picks from the server.
+
+5) Add a safety guard:
+   - Add a visible indicator showing the active roomId and “LIVE (server)” vs “LOCAL (mock)”.
+   - If the app detects it is in /live/:roomId, disable any code paths that initialize a fresh local/mock draft.
+
+DELIVERABLES:
+- Fix the bug so picks in /live/dynasty2025 remain correct after navigating to any other tab/page and returning.
+- Ensure a new browser joining any tab can still see the current live picks (hydrated from server).
+- Tell me exactly what you changed (files + key logic), and how to verify:
+  1) make picks in /live/dynasty2025
+  2) click through all tabs
+  3) return to /live/dynasty2025
+  4) picks still there and still synced across browsers

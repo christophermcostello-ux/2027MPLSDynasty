@@ -1,0 +1,63 @@
+Roster Management default lineup auto-slotting
+
+In the Roster Management page, when a team is loaded (or when switching the team dropdown), automatically populate the Starting Hitters and Pitching Staff slots using the players currently on that team’s roster/bench—so the lineup is not empty by default.
+
+Goal: If the bench contains players like in the screenshot, automatically move them into the most appropriate empty starting slots (e.g., Ivan Herrera → C, Elly De La Cruz → SS, Cedanne Rafaela → OF, Jazz Chisholm Jr. → 2B, etc.). Any remaining players stay on the bench.
+
+Implementation requirements
+
+Add an autoFillLineup() step that runs:
+
+on initial render after roster data is available
+
+when the selected team changes
+
+AND only if the starting lineup is currently empty (to avoid overriding a user’s manual lineup).
+
+If the user clicks Reset Lineup, it should clear the lineup and then immediately re-run autoFillLineup() (so Reset returns to “best default”, not empty).
+
+Do not duplicate players across multiple slots. A player can only occupy one spot.
+
+Slotting rules (hitters)
+
+Starting hitter slots: C, 1B, 2B, SS, 3B, LF, CF, RF, DH (use the exact slot keys your UI uses).
+
+Use player eligibility from the dataset (e.g., positions array, or pos string like "C", "SS", "OF", etc.).
+
+Fill in this priority order to reduce conflicts:
+
+Scarce infield: C, SS, 2B, 3B, 1B
+
+Outfield: CF, LF, RF (if player just has OF, place into the first available of LF/CF/RF)
+
+DH last (prefer hitters that do not have a defensive slot available, if you track that).
+
+If a player has multi-eligibility, assign them to the first slot that is still empty using the above priority.
+
+Slotting rules (pitchers)
+
+Pitching slots shown: SP1..SP5 and RP1..RP4 (use your exact keys)
+
+Use pitcher role/eligibility from the dataset (SP, RP, or P).
+
+Fill SP1..SP5 with SP-eligible first.
+
+Fill RP1..RP4 with RP-eligible next.
+
+If you have generic P (no SP/RP), use it to fill remaining pitching slots after SP/RP.
+
+Bench behavior
+
+After filling starters, place all remaining rostered players into Bench (preserve existing bench order as much as possible, minus the players moved into starters).
+
+Acceptance test
+
+With a roster similar to the screenshot, the page loads and the starting slots are filled automatically (no “Empty Slot” unless the roster truly lacks eligible players).
+
+Switching teams updates to that team’s default lineup.
+
+Reset Lineup returns to the same auto-filled defaults.
+
+Manual changes by the user are not overwritten unless they press Reset or the lineup is entirely empty.
+
+Note: Implement this in the existing lineup state management (where you store starters/bench). Do not change the roster data source—just the default placement behavior.

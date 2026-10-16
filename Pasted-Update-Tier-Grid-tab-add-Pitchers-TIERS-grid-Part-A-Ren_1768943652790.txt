@@ -1,0 +1,45 @@
+Update Tier Grid tab + add Pitchers TIERS grid
+Part A — Rename + reposition the existing Batters tier grid tab
+1.	In the tab row, move the current “Tier Grid” tab so it appears directly under/after “Batters” (immediately next to Batters in the tabs).
+2.	Rename the tab label from “Tier Grid” to “TIERS” (all caps).
+3.	Keep the Batters TIERS grid behavior exactly as it is now:
+o	interactive add-to-queue
+o	drafted players disable/grey out and auto-remove from queue
+o	search filters the grid
+o	layout matches the other tabs
+Part B — Create a new “TIERS” grid for Pitchers
+Add a new tab for Pitchers tiers. Place it directly under/after “Pitchers” in the tab row and label it “TIERS” (all caps). This should behave the same way as Batters TIERS (interactive + queue + drafted sync + search), but with pitcher-specific grid columns.
+Pitchers TIERS grid layout (8 total columns in 4 categories)
+Render a tier grid with tiers down the left (Tier 1–7 unless pitcher data uses different tiers—use what exists in the pitcher tier dataset).
+Create 8 columns grouped into 4 categories exactly like this:
+1.	Right Handed Starting Pitcher (SP) = 2 columns
+o	label columns: RHP SP 1, RHP SP 2
+2.	Left Handed Starting Pitcher (SP) = 1 column
+o	label column: LHP SP
+3.	Right Handed Relief Pitcher (RP) = 3 columns
+o	label columns: RHP RP 1, RHP RP 2, RHP RP 3
+4.	Left Handed Relief Pitcher (RP) = 2 columns
+o	label columns: LHP RP 1, LHP RP 2
+How to assign pitchers into these columns
+•	Determine each pitcher’s role (SP vs RP) from the pitcher dataset (use existing fields “Pos”).
+•	Determine handedness (R vs L) from the pitcher dataset.
+•	Every pitcher appears once in the Pitchers TIERS grid.
+•	Within each Tier row:
+o	Put RHP SPs into the two RHP SP columns (fill left column first, then second).
+o	Put LHP SPs into the single LHP SP column.
+o	Put RHP RPs into the three RHP RP columns (fill 1 then 2 then 3).
+o	Put LHP RPs into the two LHP RP columns (fill 1 then 2).
+•	If a tier has more pitchers than available slots in those columns, allow vertical stacking/scrolling within the cell (do not drop pitchers).
+Data source for pitcher tiers
+•	Use the pitcher tier source already in the project (if we don’t have one yet, create it in the same format as batters: CSV + parse).
+•	Keep IDs consistent with the rest of the app (use pitcher Player ID).
+Interactivity (must match Batters TIERS)
+•	Clicking a pitcher adds them to the same queue (no duplicates).
+•	If a pitcher is drafted by any team, they become non-clickable/greyed out (or removed) in the grid and are removed from any queue automatically.
+•	Search filters pitchers in the grid.
+Placement / UI behavior
+•	Both Batters TIERS and Pitchers TIERS must use the exact same “view” layout as the other tabs (same header, same search location, same queue panel on the right, same scroll region).
+Acceptance tests
+•	Tab order shows: Batters, TIERS, Pitchers, TIERS, OTL Batters, OTL Pitchers (or equivalent ordering preserving existing tabs, but TIERS sits immediately after its parent tab).
+•	Batters TIERS still works exactly as before.
+•	Pitchers TIERS shows the 8 columns grouped as specified and behaves interactively with queue + drafted sync.

@@ -1,0 +1,251 @@
+Build a full-stack web app for a live draft for a 10-team dynasty baseball league with commissioner controls, real-time updates, player filtering/sorting, OTL (Outside The League) drafting, and tradable picks/tokens.
+
+League Setup & Totals (Hard Rules)
+
+Teams: 10 teams.
+
+Keepers: There will be exactly 100 saved players across the league going into the draft (league-wide keeper total = 100). Individual teams may have more or fewer keepers due to trades.
+
+Draft order: Fixed order every round (NOT reversing snake):
+
+Every round goes Team 1 → Team 10
+
+Team 1 is always first; Team 10 always last.
+
+Draft structure:
+
+Main Draft (Major League / ML): 16 rounds × 10 teams = 160 picks total. Every ML pick is a 4-year contract.
+
+Minor Draft (MiL): 10 rounds × 10 teams = 100 picks total. Every MiL pick is a 2-year contract.
+
+The MiL draft happens after the ML draft completes.
+
+Draft completion rule: Use Option A — the draft runs through all scheduled pick slots (ML 160 picks + MiL 100 picks), regardless of roster sizes. Teams may temporarily exceed 26 and handle cuts later; do not block picks due to roster size.
+
+OTL (Outside The League) System (ML ONLY)
+
+The league does not draft from all MLB teams. Players are split into:
+
+In-League pool (normal draftable players)
+
+OTL pool (outside the league)
+
+The app must provide four player browsing tabs:
+
+Batters (in-league)
+
+Pitchers (in-league)
+
+OTL Batters
+
+OTL Pitchers
+
+OTL pick rules (Main Draft only):
+
+Each team starts with 1 OTL token (tradable).
+
+A team may use its OTL token on any of its ML picks, but must explicitly declare “Use OTL token” during that pick.
+
+When used, the token is consumed for that team.
+
+OTL picks are NOT allowed in the MiL draft.
+
+Total OTL picks in the ML draft are capped by a league setting OTL_PICK_CAP = 10 (default 10; commissioner can change).
+
+OTL players can only be drafted from OTL tabs; non-OTL players can only be drafted from non-OTL tabs.
+
+The OTL “Draft” button must be disabled unless:
+
+It is the current pick owner’s turn (or commissioner override), AND
+
+“Use OTL token” is toggled for that pick, AND
+
+The team owns at least 1 unused OTL token, AND
+
+The league OTL cap has not been exceeded, AND
+
+The current phase is ML.
+
+Inputs I Will Provide (must support admin paste/import)
+
+Team names (one per line)
+
+In-league player pool names (one per line or CSV)
+
+Optional: OTL player list (one per line or CSV). If provided, use it; otherwise allow manual categorization into OTL.
+
+Keepers by team (format: Team Name: player1, player2, ... OR CSV)
+
+Optional batter stats CSV and pitcher stats CSV
+
+App Requirements (Draft Room)
+
+A) Real-time draft room for all connected users:
+
+Current pick display: Phase (ML/MiL), Round, Pick #, pick owner team on the clock
+
+Highlight team on the clock
+
+Countdown timer per pick (configurable; default 90 seconds)
+
+Draft board grids:
+
+ML board (16 rounds × 10 slots)
+
+MiL board (10 rounds × 10 slots)
+
+Pick log (chronological list) with timestamps, including whether OTL was used
+
+Team panels showing:
+
+Keepers
+
+Drafted ML players (4-year)
+
+Drafted MiL players (2-year)
+
+OTL tokens owned/used
+
+B) Player browsing UI:
+
+Tabs: Batters / Pitchers / OTL Batters / OTL Pitchers
+
+Filters:
+
+Position (multi-select; include UTIL if available)
+
+Handedness (Batters: bats R/L/S; Pitchers: throws R/L)
+
+Drafted vs Available
+
+Team (keeper team / drafted-by team)
+
+Search by name (partial match)
+
+Sorting:
+
+Sort by any imported stat column (dropdown), asc/desc
+
+Optional secondary sort
+
+“Draft” button per player row:
+
+Enabled only for the team that owns the current pick (unless commissioner override)
+
+OTL tabs require “Use OTL token” toggled + token available + cap not exceeded + phase=ML
+
+C) Pick submission behavior:
+
+On submit, auto-advance to the next scheduled pick (fixed order)
+
+Automatically assign contract years based on phase:
+
+ML picks: 4-year
+
+MiL picks: 2-year
+
+Prevent drafting any player already drafted or already a keeper.
+
+Commissioner Controls (Admin)
+
+Commissioner Mode toggle
+
+Start/Pause draft
+
+Set/reset timer
+
+Make a pick for any team
+
+Undo last pick
+
+Edit any pick (swap player)
+
+Jump to a specific pick (repair tool)
+
+Force phase transition (or auto-transition after ML pick 160)
+
+Manage OTL cap setting (default 10)
+
+Export tools (CSV)
+
+Trading (must support)
+
+Trading is commissioner-controlled and recorded in an audit log.
+Tradable assets:
+
+Draft picks (any future pick slot in ML or MiL; reassign pick owner)
+
+OTL tokens (transfer token ownership between teams)
+Also support pre-draft trades affecting keepers:
+
+Commissioner tool to move a keeper player from one team to another or remove a keeper (reflecting “player traded for pick” scenarios)
+
+Keepers totals league-wide should validate to 100 after setup (warn if not)
+
+Pick ownership rule:
+
+Each pick slot has an owner pickOwnerTeamId. The “team on the clock” is the owner of the current pick slot, not necessarily the slot’s original team.
+
+Stats Import & Sorting (data-driven)
+
+Admin can import batter stats CSV and pitcher stats CSV.
+
+Store stats as key/value pairs on players; do not hardcode stat fields.
+
+UI sort dropdown should populate dynamically from imported stat headers for that tab.
+
+Data Model (suggested; adjust if needed but keep concepts)
+
+Player: id, name, type(Batter/Pitcher), positions, bats, throws, isOTL, drafted flags + draft metadata + contractYears + stats object
+
+Team: id, name, keepers[], draftedMajor[], draftedMinor[], otlTokensOwned, otlTokensUsed
+
+DraftPick: id, phase(ML/MiL), round, pickInRound(1–10), overallPickNumber, pickOwnerTeamId, selectedPlayerId, usedOTLToken(boolean)
+
+DraftState: phase, overallPickNumber, isRunning, timerSecondsRemaining, currentPickId
+
+Routes / Pages
+
+/ Draft Room (boards, pick log, team panels, timer, player tabs)
+
+/admin Setup/import + commissioner controls + trade tool + phase + exports
+
+Persistence & Real-time
+
+Use SQLite for persistence.
+
+Use Socket.IO for real-time sync across clients.
+
+Provide README instructions for running in Replit.
+
+Export Tools
+
+Export to CSV:
+
+Full pick log (including phase, contract years, usedOTLToken)
+
+Team rosters (keepers + drafted ML + drafted MiL + OTL token usage)
+
+Current pick ownership (after trades)
+
+Validation & Edge Cases
+
+Handle duplicate player names:
+
+Prefer PlayerID if provided
+
+Otherwise normalize names and warn on duplicates; allow commissioner to resolve duplicates manually.
+
+Friendly error messages (drafted player, no token, not your pick, OTL not allowed in MiL, cap reached, etc.)
+
+Include sample/seed data so the app runs even without import.
+
+Deliverables
+
+A working Replit project: Node.js + Express + Socket.IO backend, React frontend
+
+Clean UI (tables, filters, sorting, draft buttons)
+
+Fully functioning ML + MiL draft flow, OTL system, and trades
+
+Build the complete project now with the rules above.

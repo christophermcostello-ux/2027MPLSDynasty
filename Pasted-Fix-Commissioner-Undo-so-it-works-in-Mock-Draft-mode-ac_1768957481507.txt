@@ -1,0 +1,51 @@
+Fix Commissioner Undo so it works in Mock Draft mode across all clients
+
+Currently Undo works locally, but in Mock Draft mode it does not propagate and/or does not modify the authoritative mock draft state. Update the implementation so Undo in Mock behaves exactly like Draft mode, but using the Mock shared state/event pipeline.
+
+Expected behavior
+
+When the commissioner clicks Undo Last Pick in Mock:
+
+The last pick is removed from the authoritative Mock pick history (server/shared state, not just local UI).
+
+The drafted player is removed from draftedIds/draftedMap.
+
+The on-the-clock team/pick number rolls back by 1.
+
+All connected clients update immediately without refresh:
+
+The player reappears in the player pool and TIERS grids.
+
+The player becomes queue-able again.
+
+Any client queue reconciliation should not re-add the player automatically, but it must stop treating them as drafted.
+
+Implementation requirements
+3) Identify how Mock picks are stored/broadcast today (e.g., websocket event, realtime db, shared room state, etc.). Picks likely broadcast via something like pickMade / drafted events.
+4) Implement an authoritative Undo for Mock by either:
+
+emitting a new event like undoPick / undoLastPick, OR
+
+calling an existing backend/realtime function to pop the last pick in the room.
+
+All clients must listen for the undo event and update their mock state accordingly (pickHistory, draftedIds, onClock).
+
+Ensure commissioner permission checks remain intact (only commissioner can undo).
+
+Data integrity
+7) Undo should only remove the last pick (LIFO). If there is no pick, it should no-op with a toast.
+8) Prevent race conditions: if a pick comes in while undo happens, serialize these changes on the authoritative layer (server/room state).
+
+Acceptance test
+
+Open Mock in two browsers.
+
+Browser A (commissioner) makes a pick; Browser B sees it.
+
+Browser A clicks Undo; Browser B immediately sees the pick removed and the player restored.
+
+Pick number/on-the-clock are correct on both browsers.
+
+Deliverable
+
+Update code so Mock Undo updates the shared mock draft state and broadcasts to all clients.

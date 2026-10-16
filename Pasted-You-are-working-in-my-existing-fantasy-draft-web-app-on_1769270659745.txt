@@ -1,0 +1,48 @@
+You are working in my existing fantasy draft web app on Replit. Right now mock drafts are saved locally and revert; I need a LIVE shared draft that is permanently saved in a database and syncs for all users.
+
+GOALS
+1) Persist all draft state server-side in a SQL database (Replit SQL Database / Postgres).
+2) Create a “Draft Room” identified by a roomId in the URL (e.g. /draft/:roomId). Everyone in the league uses the same link.
+3) Add a top bar UI:
+   - Team dropdown (select a team)
+   - “Login” button next to it
+   When Login is clicked, show a modal:
+   “You are logging in to draft as ‘{teamName}’. Click OK to continue.”
+   If OK, store activeTeam in sessionStorage and app state.
+4) Enforce picking rules on the backend:
+   - A pick can only be submitted if it is that team’s turn
+   - Reject out-of-turn picks
+   - Require a shared ROOM_CODE sent with requests (simple anti-trolling)
+5) Add Commissioner access for Chris:
+   - Add a “Commissioner” button that prompts for COMMISH_PIN.
+   - If correct, set commissionerMode=true and allow:
+     a) pick as ANY team (bypass team turn lock),
+     b) undo last pick,
+     c) edit/replace a pick,
+     d) pause/resume draft,
+     e) set the on-the-clock team / pick number.
+   - All commissioner actions must be validated server-side with COMMISH_PIN.
+6) Live syncing:
+   - Implement GET /api/draft/:roomId/state returning full state (teams, picks, current pick, on-the-clock team, paused).
+   - Frontend should poll every 1–2 seconds and update UI when state changes.
+7) Add export:
+   - GET /api/draft/:roomId/export.csv generates picks CSV.
+8) Data model (minimum):
+   - teams(id, room_id, name, order_index)
+   - picks(id, room_id, pick_number, team_id, player_id, player_name, created_at, created_by)
+   - draft_state(room_id, current_pick_number, on_clock_team_id, paused, updated_at)
+   - audit_log(id, room_id, action, payload_json, created_at)
+9) Migration/seed:
+   - Create an initial room and seed 10 teams (I will edit names later), and set Chris as commissioner-only (no user accounts needed).
+10) Remove all reliance on localStorage for draft picks. localStorage can be used only for UI convenience (activeTeam), never for the source of truth.
+
+REPLIT SETUP REQUIREMENTS
+- Use Replit’s SQL Database integration and show me where connection string is read from env vars.
+- Add env vars/secrets: ROOM_CODE and COMMISH_PIN.
+- Ensure the app runs as a server deployment (not static). Provide step-by-step instructions to deploy via Replit Deployments, and recommend Reserved VM for always-on reliability.
+
+DELIVERABLES
+- Implement the backend endpoints and DB schema.
+- Update the frontend with the Team dropdown + Login modal + Commissioner mode.
+- Add a “Draft Status” indicator (Connected / Last sync time).
+- Provide a short “Draft Day Runbook” with: how to start the room, verify two browsers sync, and how to export results.

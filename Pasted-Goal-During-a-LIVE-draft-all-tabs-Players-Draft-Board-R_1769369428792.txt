@@ -1,0 +1,73 @@
+Goal: During a LIVE draft, all tabs (Players, Draft Board, Rosters, Pick Log, Live Draft) must use the SAME draft state and stay in sync. Right now Live Draft uses useLiveDraftStore + /api/live/..., while the other tabs use useDraftStore (mock/local) and are disconnected.
+
+Required outcomes:
+
+When a pick is made anywhere (Players tab or Live Draft page), it must persist to the live room and immediately appear in all tabs.
+
+Draft Board / Rosters / Pick Log must display picks from the LIVE store when a live room is active.
+
+Anyone can make picks (no login friction) using the existing room code / roomId.
+
+Commissioner can undo/edit picks using the existing commissioner code flow; only those actions require commissioner privileges.
+
+Do NOT break mock/offline mode: if there is no live room, keep using useDraftStore like today.
+
+How to implement (do this exactly):
+
+Create a new unified hook or adapter, e.g. client/src/lib/useDraftData.ts (name is flexible).
+
+It should detect live mode with const roomId = sessionStorage.getItem('liveDraftRoomId').
+
+If roomId exists:
+
+Read picks/teams/draftState from useLiveDraftStore() ONLY.
+
+Provide actions that call the LIVE endpoints:
+
+POST /api/live/${roomId}/pick for making picks
+
+POST /api/live/${roomId}/undo for undo (commissioner only)
+
+POST /api/live/${roomId}/edit (or the existing edit path if present) for commissioner changes
+
+Ensure the existing LiveDraftProvider polling (GET /api/live/${roomId}/state every 1.5s) continues to refresh the store.
+
+If roomId does NOT exist:
+
+Fall back to current behavior using useDraftStore() and its local actions.
+
+Refactor pages to use the unified hook:
+
+Update these pages/components so they do NOT read picks from useDraftStore in live mode:
+
+Players page
+
+Draft Board page
+
+Rosters page
+
+Pick Log page
+
+Replace their pick reads/writes with the unified hook’s picks and makePick() action.
+
+Remove any remaining “local-only” pick mutations during live mode (no useDraftStore.makePick() when live).
+
+UI behavior:
+
+In live mode, display a small “LIVE” indicator and optionally disable any mock-only controls.
+
+Allow picks from Players tab to submit to live.
+
+Keep commissioner controls gated by existing commissioner flag in sessionStorage (live-commissioner-${roomId}) and require commissioner code only for undo/edit endpoints.
+
+Deliverables:
+
+List the exact files you changed.
+
+Show the new unified hook file.
+
+Show the diffs for each updated page (Players, Draft Board, Rosters, Pick Log).
+
+After changes, explain how to verify: “make a pick in Players tab → it appears on Live Draft + Draft Board + Pick Log + Rosters without refresh.”
+
+Constraints: Keep changes minimal, do not rewrite the app. Do not remove mock draft support.

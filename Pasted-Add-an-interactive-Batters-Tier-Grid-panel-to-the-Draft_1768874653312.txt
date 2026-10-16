@@ -1,0 +1,66 @@
+Add an interactive “Batters Tier Grid” panel to the Draft page UI, positioned to the RIGHT of the existing “OTL Pitchers” section at the top of the page.
+
+Data source
+
+Use Batters Draft Tier by Position.csv.
+
+The player name is in the 2nd column even if the header is blank; normalize it to name.
+
+Use Player ID as the unique identifier.
+
+Use Tier for tier rows (1–7).
+
+Eligibility columns include: C, 1b, 2b, 3b, SS, LF, CF, RF. If the cell is non-empty, the player is eligible at that position.
+
+Rendering requirements
+
+Render a tier grid (tiers 1–7 down the left, positions across the top) for Batters only.
+
+IMPORTANT: Every player must appear in every position they are eligible for (do NOT dedupe across positions).
+
+Grid columns: Catcher (C), 1B, 2B, SS, 3B, CF, OF.
+
+OF should include players eligible at LF or RF.
+
+Do NOT also auto-add CF players to OF unless they are LF/RF eligible.
+
+Interactive behavior
+4) Each player displayed in the grid should be a clickable row/card/button.
+5) Clicking a player in the tier grid adds them to the user’s local queue (same queue used elsewhere in the app).
+6) If they are already in the queue, clicking again should either do nothing or toggle/remove (choose whichever matches existing queue UX, but don’t duplicate them).
+
+Draft sync (must-have)
+7) When a player is drafted (by ANY team, Draft or Mock), the tier grid must update so that player:
+
+visually shows as drafted (greyed out with “DRAFTED” tag) OR is removed from the grid (either is acceptable, but drafted players must not be addable to queue).
+
+If a drafted player is currently in a user’s local queue, they must automatically be removed from that queue immediately (reconcile queue against global drafted state).
+
+Use Player ID to sync drafted status—no name matching.
+
+Queue rules
+10) Queue capacity should respect the current limit (if it’s 16 for 4x4). If full, show a small toast/message like “Queue is full” and do not add.
+
+Placement / layout
+11) Place the new Batters Tier Grid panel to the right of “OTL Pitchers” at the top of the page, in the same row.
+12) Make it scrollable inside its panel (vertical scroll), so it doesn’t make the whole page enormous.
+13) Keep styling consistent with the dark theme. Tier row banding similar to the screenshot is fine.
+
+Performance
+14) This grid could contain many names—optimize rendering:
+
+pre-group players by tier and position
+
+avoid recomputing on every render (memoize)
+
+Acceptance tests
+
+A multi-eligible player appears under each eligible position column.
+
+Clicking a player adds them to the queue.
+
+If another team drafts that player, they grey out/disappear and are removed from the queue automatically.
+
+Drafted players cannot be queued.
+
+The panel appears to the right of OTL Pitchers at the top of the Draft page.
