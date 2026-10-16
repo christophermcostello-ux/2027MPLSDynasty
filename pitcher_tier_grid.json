@@ -1,0 +1,1136 @@
+[
+  {
+    "id": "9334",
+    "name": "Kevin Gausman",
+    "tier": 1,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 193
+  },
+  {
+    "id": "10835",
+    "name": "Shohei Ohtani",
+    "tier": 1,
+    "role": "SP",
+    "throws": "R",
+    "durability": "A",
+    "ip": 47
+  },
+  {
+    "id": "8616",
+    "name": "Aroldis Chapman",
+    "tier": 2,
+    "role": "RP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 61.1
+  },
+  {
+    "id": "12820",
+    "name": "Emmet Sheehan",
+    "tier": 2,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 73.1
+  },
+  {
+    "id": "10576",
+    "name": "Eric Lauer",
+    "tier": 2,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 104.2
+  },
+  {
+    "id": "12924",
+    "name": "Jacob Misiorowski",
+    "tier": 2,
+    "role": "SP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 66
+  },
+  {
+    "id": "11847",
+    "name": "Joe Ryan",
+    "tier": 2,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 171
+  },
+  {
+    "id": "10569",
+    "name": "Clay Holmes",
+    "tier": 2,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 165.2
+  },
+  {
+    "id": "10730",
+    "name": "Brandon Woodruff",
+    "tier": 3,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 64.2
+  },
+  {
+    "id": "13211",
+    "name": "Nolan McLean",
+    "tier": 3,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 48
+  },
+  {
+    "id": "10148",
+    "name": "Blake Snell",
+    "tier": 3,
+    "role": "SP",
+    "throws": "L",
+    "durability": "F",
+    "ip": 61.1
+  },
+  {
+    "id": "11820",
+    "name": "Quinn Priester",
+    "tier": 3,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 157.1
+  },
+  {
+    "id": "13125",
+    "name": "Matt Svanson",
+    "tier": 4,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 60.1
+  },
+  {
+    "id": "12946",
+    "name": "Hurston Waldrep",
+    "tier": 4,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 56.1
+  },
+  {
+    "id": "12776",
+    "name": "Kodai Senga",
+    "tier": 4,
+    "role": "SP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 113.1
+  },
+  {
+    "id": "13156",
+    "name": "Shane Smith",
+    "tier": 4,
+    "role": "SP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 146.1
+  },
+  {
+    "id": "10867",
+    "name": "Shane Bieber",
+    "tier": 4,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 40.1
+  },
+  {
+    "id": "12500",
+    "name": "Randy Vasquez",
+    "tier": 4,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 133.2
+  },
+  {
+    "id": "12281",
+    "name": "Spencer Strider",
+    "tier": 4,
+    "role": "SP",
+    "throws": "R",
+    "durability": "D",
+    "ip": 125.1
+  },
+  {
+    "id": "11479",
+    "name": "Braydon Fisher",
+    "tier": 4,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 50
+  },
+  {
+    "id": "11704",
+    "name": "Garrett Cleavinger",
+    "tier": 4,
+    "role": "RP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 61.1
+  },
+  {
+    "id": "13147",
+    "name": "Jack Dreyer",
+    "tier": 4,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 76.1
+  },
+  {
+    "id": "12746",
+    "name": "Abner Uribe",
+    "tier": 4,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 75.1
+  },
+  {
+    "id": "11358",
+    "name": "Garrett Whitlock",
+    "tier": 4,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 72
+  },
+  {
+    "id": "11644",
+    "name": "Tyler Rogers",
+    "tier": 4,
+    "role": "RP",
+    "throws": "R",
+    "durability": "A",
+    "ip": 77.1
+  },
+  {
+    "id": "11717",
+    "name": "Trevor Megill",
+    "tier": 4,
+    "role": "RP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 47
+  },
+  {
+    "id": "8652",
+    "name": "Martin Perez",
+    "tier": 5,
+    "role": "SP",
+    "throws": "L",
+    "durability": "F",
+    "ip": 56
+  },
+  {
+    "id": "12215",
+    "name": "Tylor Megill",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 68.1
+  },
+  {
+    "id": "10894",
+    "name": "Griffin Canning",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 76.1
+  },
+  {
+    "id": "10098",
+    "name": "Adrian Houser",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 125
+  },
+  {
+    "id": "13129",
+    "name": "Hunter Dobbins",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 61
+  },
+  {
+    "id": "9640",
+    "name": "Lucas Giolito",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 145
+  },
+  {
+    "id": "12846",
+    "name": "Jacob Lopez",
+    "tier": 5,
+    "role": "SP",
+    "throws": "L",
+    "durability": "C",
+    "ip": 92.2
+  },
+  {
+    "id": "9176",
+    "name": "Jose Quintana",
+    "tier": 5,
+    "role": "SP",
+    "throws": "L",
+    "durability": "D",
+    "ip": 131.2
+  },
+  {
+    "id": "13120",
+    "name": "Chad Patrick",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 119.2
+  },
+  {
+    "id": "9262",
+    "name": "Brooks Raley",
+    "tier": 5,
+    "role": "RP",
+    "throws": "L",
+    "durability": "F",
+    "ip": 25.2
+  },
+  {
+    "id": "10985",
+    "name": "Tyler Kinley",
+    "tier": 5,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 72.2
+  },
+  {
+    "id": "12367",
+    "name": "Dylan Dodd",
+    "tier": 5,
+    "role": "RP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 35
+  },
+  {
+    "id": "11009",
+    "name": "Jason Adam",
+    "tier": 5,
+    "role": "RP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 65.1
+  },
+  {
+    "id": "10861",
+    "name": "Brendon Little",
+    "tier": 5,
+    "role": "RP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 68.1
+  },
+  {
+    "id": "13307",
+    "name": "Jack Perkins",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 38.2
+  },
+  {
+    "id": "11846",
+    "name": "Riley O'Brien",
+    "tier": 5,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 48
+  },
+  {
+    "id": "12971",
+    "name": "Mike Vasil",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 101
+  },
+  {
+    "id": "11482",
+    "name": "Edwin Uceta",
+    "tier": 5,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 76
+  },
+  {
+    "id": "12937",
+    "name": "Yuki Matsui",
+    "tier": 5,
+    "role": "RP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 63.1
+  },
+  {
+    "id": "12811",
+    "name": "Grant Anderson",
+    "tier": 5,
+    "role": "RP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 69.2
+  },
+  {
+    "id": "10931",
+    "name": "JoJo Romero",
+    "tier": 5,
+    "role": "RP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 61
+  },
+  {
+    "id": "13117",
+    "name": "Ian Seymour",
+    "tier": 5,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 57
+  },
+  {
+    "id": "13016",
+    "name": "Justin Sterner",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 65
+  },
+  {
+    "id": "12156",
+    "name": "Cole Sands",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 72
+  },
+  {
+    "id": "11979",
+    "name": "Nick Mears",
+    "tier": 5,
+    "role": "RP",
+    "throws": "R",
+    "durability": "D",
+    "ip": 56.2
+  },
+  {
+    "id": "12687",
+    "name": "Jeremiah Estrada",
+    "tier": 5,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 73
+  },
+  {
+    "id": "11489",
+    "name": "Aaron Ashby",
+    "tier": 5,
+    "role": "SP",
+    "throws": "L",
+    "durability": "F",
+    "ip": 66.2
+  },
+  {
+    "id": "11998",
+    "name": "Bryan Baker",
+    "tier": 5,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 68.2
+  },
+  {
+    "id": "12275",
+    "name": "Dylan Lee",
+    "tier": 5,
+    "role": "RP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 68.1
+  },
+  {
+    "id": "9599",
+    "name": "Steven Matz",
+    "tier": 5,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 76.2
+  },
+  {
+    "id": "10549",
+    "name": "Grant Holmes",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 115
+  },
+  {
+    "id": "9879",
+    "name": "Luis Severino",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 162.2
+  },
+  {
+    "id": "9872",
+    "name": "Jose Berrios",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 166
+  },
+  {
+    "id": "12617",
+    "name": "Davis Martin",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 142.2
+  },
+  {
+    "id": "10426",
+    "name": "Joey Wentz",
+    "tier": 6,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 98
+  },
+  {
+    "id": "10898",
+    "name": "Dustin May",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 132.1
+  },
+  {
+    "id": "9815",
+    "name": "Yimi Garcia",
+    "tier": 6,
+    "role": "RP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 21
+  },
+  {
+    "id": "12377",
+    "name": "Wikelman Gonzalez",
+    "tier": 6,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 20.1
+  },
+  {
+    "id": "12991",
+    "name": "Yariel Rodriguez",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 73
+  },
+  {
+    "id": "12376",
+    "name": "Chris Murphy",
+    "tier": 6,
+    "role": "RP",
+    "throws": "L",
+    "durability": "F",
+    "ip": 34.2
+  },
+  {
+    "id": "12929",
+    "name": "Justin Slaten",
+    "tier": 6,
+    "role": "RP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 34
+  },
+  {
+    "id": "12661",
+    "name": "Brennan Bernardino",
+    "tier": 6,
+    "role": "SP",
+    "throws": "L",
+    "durability": "C",
+    "ip": 51.2
+  },
+  {
+    "id": "13258",
+    "name": "Mason Fluharty",
+    "tier": 6,
+    "role": "RP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 52.2
+  },
+  {
+    "id": "12718",
+    "name": "Hogan Harris",
+    "tier": 6,
+    "role": "RP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 64.2
+  },
+  {
+    "id": "11011",
+    "name": "Seranthony Dominguez",
+    "tier": 6,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 62.2
+  },
+  {
+    "id": "11920",
+    "name": "Alex Vesia",
+    "tier": 6,
+    "role": "RP",
+    "throws": "L",
+    "durability": "C",
+    "ip": 59.2
+  },
+  {
+    "id": "10848",
+    "name": "DL Hall",
+    "tier": 6,
+    "role": "SP",
+    "throws": "L",
+    "durability": "F",
+    "ip": 38.2
+  },
+  {
+    "id": "12199",
+    "name": "Tommy Nance",
+    "tier": 6,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 31.2
+  },
+  {
+    "id": "11255",
+    "name": "Reed Garrett",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "D",
+    "ip": 55.1
+  },
+  {
+    "id": "12203",
+    "name": "Griffin Jax",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 66
+  },
+  {
+    "id": "12867",
+    "name": "Joe Boyle",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 52
+  },
+  {
+    "id": "12685",
+    "name": "Greg Weissert",
+    "tier": 6,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 67
+  },
+  {
+    "id": "13277",
+    "name": "David Morgan",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 47.1
+  },
+  {
+    "id": "12636",
+    "name": "Michael Kelly",
+    "tier": 6,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 39.2
+  },
+  {
+    "id": "12831",
+    "name": "Kyle Leahy",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 88
+  },
+  {
+    "id": "12695",
+    "name": "Louis Varland",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 72.2
+  },
+  {
+    "id": "10391",
+    "name": "Wandy Peralta",
+    "tier": 6,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 71.2
+  },
+  {
+    "id": "9559",
+    "name": "Pierce Johnson",
+    "tier": 6,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 59
+  },
+  {
+    "id": "11551",
+    "name": "Mason Englert",
+    "tier": 6,
+    "role": "RP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 44.2
+  },
+  {
+    "id": "9896",
+    "name": "Jeff Hoffman",
+    "tier": 6,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 68
+  },
+  {
+    "id": "10469",
+    "name": "Tyler Alexander",
+    "tier": 6,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 97.2
+  },
+  {
+    "id": "13190",
+    "name": "Brandon Sproat",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 20.2
+  },
+  {
+    "id": "12366",
+    "name": "AJ Smith-Shawver",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 44.1
+  },
+  {
+    "id": "10934",
+    "name": "Shane Baz",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 166.1
+  },
+  {
+    "id": "9095",
+    "name": "Yu Darvish",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 72
+  },
+  {
+    "id": "13040",
+    "name": "David Festa",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 53.1
+  },
+  {
+    "id": "12418",
+    "name": "Sean Burke",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 134.1
+  },
+  {
+    "id": "13068",
+    "name": "Zebby Matthews",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 79.1
+  },
+  {
+    "id": "10947",
+    "name": "Jordan Hicks",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 67.1
+  },
+  {
+    "id": "12096",
+    "name": "Bailey Ober",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "C",
+    "ip": 146.1
+  },
+  {
+    "id": "13094",
+    "name": "Richard Fitts",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "D",
+    "ip": 45
+  },
+  {
+    "id": "11894",
+    "name": "Nick Sandlin",
+    "tier": 7,
+    "role": "RP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 16.1
+  },
+  {
+    "id": "13010",
+    "name": "Tyler Ferguson",
+    "tier": 7,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 58
+  },
+  {
+    "id": "13047",
+    "name": "Eric Orze",
+    "tier": 7,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 41.2
+  },
+  {
+    "id": "12840",
+    "name": "Daysbel Hernandez",
+    "tier": 7,
+    "role": "RP",
+    "throws": "R",
+    "durability": "D",
+    "ip": 37
+  },
+  {
+    "id": "10413",
+    "name": "Anthony Banda",
+    "tier": 7,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 65
+  },
+  {
+    "id": "8871",
+    "name": "Shelby Miller",
+    "tier": 7,
+    "role": "RP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 46
+  },
+  {
+    "id": "12242",
+    "name": "Tyler Gilbert",
+    "tier": 7,
+    "role": "SP",
+    "throws": "L",
+    "durability": "D",
+    "ip": 51
+  },
+  {
+    "id": "11648",
+    "name": "Cole Sulser",
+    "tier": 7,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 22.2
+  },
+  {
+    "id": "10773",
+    "name": "Aaron Bummer",
+    "tier": 7,
+    "role": "SP",
+    "throws": "L",
+    "durability": "F",
+    "ip": 54.1
+  },
+  {
+    "id": "13155",
+    "name": "Elvis Alvarado",
+    "tier": 7,
+    "role": "RP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 42.1
+  },
+  {
+    "id": "12658",
+    "name": "Huascar Brazoban",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 63
+  },
+  {
+    "id": "10325",
+    "name": "Brock Stewart",
+    "tier": 7,
+    "role": "RP",
+    "throws": "R",
+    "durability": "D",
+    "ip": 37.2
+  },
+  {
+    "id": "10371",
+    "name": "Rob Zastryzny",
+    "tier": 7,
+    "role": "SP",
+    "throws": "L",
+    "durability": "F",
+    "ip": 22
+  },
+  {
+    "id": "13045",
+    "name": "Justin Wrobleski",
+    "tier": 7,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 66.2
+  },
+  {
+    "id": "12076",
+    "name": "Brandon Waddell",
+    "tier": 7,
+    "role": "SP",
+    "throws": "L",
+    "durability": "C",
+    "ip": 31.1
+  },
+  {
+    "id": "13222",
+    "name": "Grant Taylor",
+    "tier": 7,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 36.2
+  },
+  {
+    "id": "11684",
+    "name": "Kyle Hart",
+    "tier": 7,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 43
+  },
+  {
+    "id": "12630",
+    "name": "Jared Koenig",
+    "tier": 7,
+    "role": "RP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 66
+  },
+  {
+    "id": "11977",
+    "name": "Max Kranick",
+    "tier": 7,
+    "role": "RP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 37
+  },
+  {
+    "id": "13029",
+    "name": "Brandon Eisert",
+    "tier": 7,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 69.2
+  },
+  {
+    "id": "10958",
+    "name": "Ryan Borucki",
+    "tier": 7,
+    "role": "RP",
+    "throws": "L",
+    "durability": "C",
+    "ip": 35
+  },
+  {
+    "id": "13234",
+    "name": "Trey Yesavage",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 14
+  },
+  {
+    "id": "13179",
+    "name": "Roki Sasaki",
+    "tier": 5,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 36.1
+  },
+  {
+    "id": "13350",
+    "name": "Connelly Early",
+    "tier": 5,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 19.1
+  },
+  {
+    "id": "12978",
+    "name": "Luis Morales",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 48.2
+  },
+  {
+    "id": "13119",
+    "name": "Logan Henderson",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "F",
+    "ip": 25.1
+  },
+  {
+    "id": "12175",
+    "name": "Kyle Harrison",
+    "tier": 6,
+    "role": "SP",
+    "throws": "L",
+    "durability": "B",
+    "ip": 35.2
+  },
+  {
+    "id": "12166",
+    "name": "Mick Abel",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 39
+  },
+  {
+    "id": "13212",
+    "name": "Jonah Tong",
+    "tier": 6,
+    "role": "SP",
+    "throws": "R",
+    "durability": "B",
+    "ip": 18.2
+  }
+]

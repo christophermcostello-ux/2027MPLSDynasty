@@ -1,0 +1,1405 @@
+[
+  {
+    "id": "999999",
+    "name": "Shohei Ohtani",
+    "tier": 1,
+    "positions": [],
+    "llim": "",
+    "rlim": "",
+    "durability": ""
+  },
+  {
+    "id": "12949",
+    "name": "Roman Anthony",
+    "tier": 1,
+    "positions": [
+      "LF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "13186",
+    "name": "Nick Kurtz",
+    "tier": 1,
+    "positions": [
+      "1B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "11343",
+    "name": "Brice Turang",
+    "tier": 1,
+    "positions": [
+      "2B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "A"
+  },
+  {
+    "id": "13173",
+    "name": "Drake Baldwin",
+    "tier": 1,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "9116",
+    "name": "Francisco Lindor",
+    "tier": 1,
+    "positions": [
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "A"
+  },
+  {
+    "id": "12950",
+    "name": "Kyle Teel",
+    "tier": 2,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12413",
+    "name": "Colson Montgomery",
+    "tier": 2,
+    "positions": [
+      "3B",
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13265",
+    "name": "Chandler Simpson",
+    "tier": 2,
+    "positions": [
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13095",
+    "name": "Isaac Collins",
+    "tier": 2,
+    "positions": [
+      "2B",
+      "3B",
+      "LF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "10465",
+    "name": "Yandy Diaz",
+    "tier": 2,
+    "positions": [
+      "1B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13192",
+    "name": "Luke Keaschall",
+    "tier": 2,
+    "positions": [
+      "2B"
+    ],
+    "llim": "",
+    "rlim": "123",
+    "durability": "F"
+  },
+  {
+    "id": "10183",
+    "name": "Alex Bregman",
+    "tier": 2,
+    "positions": [
+      "3B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "12881",
+    "name": "Carlos Narvaez",
+    "tier": 3,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13113",
+    "name": "Caleb Durbin",
+    "tier": 3,
+    "positions": [
+      "3B",
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12653",
+    "name": "Alex Call",
+    "tier": 3,
+    "positions": [
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "10485",
+    "name": "Ryan O'Hearn",
+    "tier": 3,
+    "positions": [
+      "1B",
+      "LF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12025",
+    "name": "Masyn Winn",
+    "tier": 3,
+    "positions": [
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "D"
+  },
+  {
+    "id": "9112",
+    "name": "Jurickson Profar",
+    "tier": 3,
+    "positions": [
+      "LF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13121",
+    "name": "Jake Mangum",
+    "tier": 4,
+    "positions": [
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "11165",
+    "name": "Myles Straw",
+    "tier": 4,
+    "positions": [
+      "2B",
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "9876",
+    "name": "Brandon Nimmo",
+    "tier": 4,
+    "positions": [
+      "LF",
+      "CF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "9118",
+    "name": "Starling Marte",
+    "tier": 4,
+    "positions": [
+      "LF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "10159",
+    "name": "Andrew Benintendi",
+    "tier": 4,
+    "positions": [
+      "LF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "D"
+  },
+  {
+    "id": "10600",
+    "name": "Jake Bauers",
+    "tier": 4,
+    "positions": [
+      "1B",
+      "LF",
+      "RF"
+    ],
+    "llim": "15",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "10747",
+    "name": "Mike Tauchman",
+    "tier": 4,
+    "positions": [
+      "RF"
+    ],
+    "llim": "59",
+    "rlim": "",
+    "durability": "D"
+  },
+  {
+    "id": "10959",
+    "name": "Danny Jansen",
+    "tier": 4,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12457",
+    "name": "Edgar Quero",
+    "tier": 4,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "11866",
+    "name": "Andrew Vaughn",
+    "tier": 4,
+    "positions": [
+      "1B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "11794",
+    "name": "Ryan Jeffers",
+    "tier": 4,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12719",
+    "name": "Lawrence Butler",
+    "tier": 4,
+    "positions": [
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12212",
+    "name": "Lars Nootbaar",
+    "tier": 4,
+    "positions": [
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "9851",
+    "name": "Rob Refsnyder",
+    "tier": 4,
+    "positions": [
+      "LF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "9571",
+    "name": "Trevor Story",
+    "tier": 4,
+    "positions": [
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "A"
+  },
+  {
+    "id": "11781",
+    "name": "Miguel Vargas",
+    "tier": 4,
+    "positions": [
+      "1B",
+      "3B",
+      "LF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "D"
+  },
+  {
+    "id": "10556",
+    "name": "Rhys Hoskins",
+    "tier": 5,
+    "positions": [
+      "1B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "F"
+  },
+  {
+    "id": "12013",
+    "name": "Freddy Fermin",
+    "tier": 5,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12026",
+    "name": "Austin Martin",
+    "tier": 5,
+    "positions": [
+      "LF",
+      "CF"
+    ],
+    "llim": "52",
+    "rlim": "104",
+    "durability": "B"
+  },
+  {
+    "id": "12504",
+    "name": "Denzel Clarke",
+    "tier": 5,
+    "positions": [
+      "CF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "F"
+  },
+  {
+    "id": "12375",
+    "name": "Marcelo Mayer",
+    "tier": 5,
+    "positions": [
+      "2B",
+      "3B"
+    ],
+    "llim": "26",
+    "rlim": "",
+    "durability": "F"
+  },
+  {
+    "id": "13175",
+    "name": "Kristian Campbell",
+    "tier": 5,
+    "positions": [
+      "2B",
+      "LF",
+      "CF"
+    ],
+    "llim": "58",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13162",
+    "name": "Chase Meidroth",
+    "tier": 5,
+    "positions": [
+      "2B",
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "D"
+  },
+  {
+    "id": "13171",
+    "name": "Hyeseong Kim",
+    "tier": 5,
+    "positions": [
+      "2B",
+      "SS",
+      "CF"
+    ],
+    "llim": "21",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "9726",
+    "name": "Miguel Rojas",
+    "tier": 5,
+    "positions": [
+      "1B",
+      "2B",
+      "3B",
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "9105",
+    "name": "Nolan Arenado",
+    "tier": 5,
+    "positions": [
+      "3B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "12843",
+    "name": "Davis Schneider",
+    "tier": 5,
+    "positions": [
+      "2B",
+      "LF"
+    ],
+    "llim": "",
+    "rlim": "81",
+    "durability": "B"
+  },
+  {
+    "id": "10919",
+    "name": "Andres Gimenez",
+    "tier": 5,
+    "positions": [
+      "2B",
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "D"
+  },
+  {
+    "id": "10669",
+    "name": "Luis Torrens",
+    "tier": 5,
+    "positions": [
+      "C",
+      "1B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "10849",
+    "name": "Cedric Mullins",
+    "tier": 5,
+    "positions": [
+      "CF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "11231",
+    "name": "Ty France",
+    "tier": 5,
+    "positions": [
+      "1B",
+      "2B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12741",
+    "name": "Addison Barger",
+    "tier": 5,
+    "positions": [
+      "3B",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12374",
+    "name": "Joey Ortiz",
+    "tier": 5,
+    "positions": [
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "10916",
+    "name": "Royce Lewis",
+    "tier": 5,
+    "positions": [
+      "3B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "D"
+  },
+  {
+    "id": "9866",
+    "name": "Derek Hill",
+    "tier": 5,
+    "positions": [
+      "CF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12056",
+    "name": "Michael Harris II",
+    "tier": 5,
+    "positions": [
+      "CF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "A"
+  },
+  {
+    "id": "10366",
+    "name": "Teoscar Hernandez",
+    "tier": 6,
+    "positions": [
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "11347",
+    "name": "Trevor Larnach",
+    "tier": 6,
+    "positions": [
+      "LF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "10929",
+    "name": "Sean Murphy",
+    "tier": 6,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "F"
+  },
+  {
+    "id": "11090",
+    "name": "Nathaniel Lowe",
+    "tier": 6,
+    "positions": [
+      "1B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "11596",
+    "name": "Tommy Edman",
+    "tier": 6,
+    "positions": [
+      "2B",
+      "3B",
+      "CF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "D"
+  },
+  {
+    "id": "10879",
+    "name": "Gavin Sheets",
+    "tier": 6,
+    "positions": [
+      "1B",
+      "LF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13071",
+    "name": "Will Wagner",
+    "tier": 6,
+    "positions": [
+      "1B",
+      "2B",
+      "3B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "10992",
+    "name": "Isiah Kiner-Falefa",
+    "tier": 6,
+    "positions": [
+      "2B",
+      "3B",
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "11652",
+    "name": "Tyler Heineman",
+    "tier": 6,
+    "positions": [
+      "C"
+    ],
+    "llim": "43",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12271",
+    "name": "Nick Fortes",
+    "tier": 6,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "10195",
+    "name": "Tyrone Taylor",
+    "tier": 6,
+    "positions": [
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "8848",
+    "name": "Jose Iglesias",
+    "tier": 6,
+    "positions": [
+      "2B",
+      "3B",
+      "SS",
+      "LF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13098",
+    "name": "Thomas Saggese",
+    "tier": 6,
+    "positions": [
+      "2B",
+      "3B",
+      "SS"
+    ],
+    "llim": "66",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "9875",
+    "name": "Michael Conforto",
+    "tier": 7,
+    "positions": [
+      "LF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "10570",
+    "name": "Luis Urias",
+    "tier": 7,
+    "positions": [
+      "2B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "12763",
+    "name": "Masataka Yoshida",
+    "tier": 7,
+    "positions": [
+      "LF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "F"
+  },
+  {
+    "id": "13059",
+    "name": "Nick Sogard",
+    "tier": 7,
+    "positions": [
+      "1B",
+      "2B",
+      "3B",
+      "RF"
+    ],
+    "llim": "35",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "11999",
+    "name": "Joshua Palacios",
+    "tier": 7,
+    "positions": [
+      "LF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13215",
+    "name": "Alex Freeland",
+    "tier": 7,
+    "positions": [
+      "2B",
+      "3B"
+    ],
+    "llim": "14",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12965",
+    "name": "Dalton Rushing",
+    "tier": 7,
+    "positions": [
+      "C",
+      "1B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "12499",
+    "name": "Brandon Lockridge",
+    "tier": 7,
+    "positions": [
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "11309",
+    "name": "Kody Clemens",
+    "tier": 7,
+    "positions": [
+      "1B",
+      "2B",
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "11351",
+    "name": "Ronny Mauricio",
+    "tier": 7,
+    "positions": [
+      "3B",
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "132",
+    "durability": "C"
+  },
+  {
+    "id": "12909",
+    "name": "Pedro Pages",
+    "tier": 7,
+    "positions": [
+      "C",
+      "1B",
+      "2B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "10497",
+    "name": "Matt Thaiss",
+    "tier": 7,
+    "positions": [
+      "C",
+      "1B"
+    ],
+    "llim": "24",
+    "rlim": "132",
+    "durability": "B"
+  },
+  {
+    "id": "11784",
+    "name": "Kameron Misner",
+    "tier": 7,
+    "positions": [
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12913",
+    "name": "Hunter Feduccia",
+    "tier": 7,
+    "positions": [
+      "C",
+      "1B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12781",
+    "name": "Jonatan Clase",
+    "tier": 7,
+    "positions": [
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "27",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13001",
+    "name": "Max Schuemann",
+    "tier": 7,
+    "positions": [
+      "2B",
+      "3B",
+      "SS",
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12906",
+    "name": "Darell Hernaiz",
+    "tier": 7,
+    "positions": [
+      "2B",
+      "3B",
+      "SS"
+    ],
+    "llim": "48",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "11402",
+    "name": "Eli White",
+    "tier": 7,
+    "positions": [
+      "1B",
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13052",
+    "name": "Brooks Baldwin",
+    "tier": 7,
+    "positions": [
+      "2B",
+      "3B",
+      "SS",
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "12420",
+    "name": "Lenyn Sosa",
+    "tier": 7,
+    "positions": [
+      "1B",
+      "2B",
+      "3B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "12558",
+    "name": "Curtis Mead",
+    "tier": 7,
+    "positions": [
+      "1B",
+      "2B",
+      "3B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "9784",
+    "name": "Michael A. Taylor",
+    "tier": 7,
+    "positions": [
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12919",
+    "name": "Brooks Lee",
+    "tier": 7,
+    "positions": [
+      "2B",
+      "3B",
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "9762",
+    "name": "Christian Vazquez",
+    "tier": 7,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "11878",
+    "name": "Luisangel Acuna",
+    "tier": 7,
+    "positions": [
+      "2B",
+      "3B",
+      "SS",
+      "CF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "10922",
+    "name": "Mark Vientos",
+    "tier": 7,
+    "positions": [
+      "1B",
+      "3B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "11391",
+    "name": "Nolan Gorman",
+    "tier": 7,
+    "positions": [
+      "1B",
+      "2B",
+      "3B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "D"
+  },
+  {
+    "id": "12024",
+    "name": "Jordan Walker",
+    "tier": 7,
+    "positions": [
+      "RF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "D"
+  },
+  {
+    "id": "11891",
+    "name": "Taylor Walls",
+    "tier": 7,
+    "positions": [
+      "2B",
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "F"
+  },
+  {
+    "id": "11033",
+    "name": "Austin Wynns",
+    "tier": 7,
+    "positions": [
+      "C",
+      "1B"
+    ],
+    "llim": "36",
+    "rlim": "67",
+    "durability": "F"
+  },
+  {
+    "id": "12488",
+    "name": "Carlos Cortes",
+    "tier": 7,
+    "positions": [
+      "LF",
+      "RF"
+    ],
+    "llim": "5",
+    "rlim": "89",
+    "durability": "B"
+  },
+  {
+    "id": "13008",
+    "name": "Brett Harris",
+    "tier": 7,
+    "positions": [
+      "1B",
+      "3B"
+    ],
+    "llim": "27",
+    "rlim": "46",
+    "durability": "C"
+  },
+  {
+    "id": "13054",
+    "name": "Nacho Alvarez Jr.",
+    "tier": 7,
+    "positions": [
+      "3B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "F"
+  },
+  {
+    "id": "12656",
+    "name": "Nate Eaton",
+    "tier": 7,
+    "positions": [
+      "3B",
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "43",
+    "rlim": "38",
+    "durability": "B"
+  },
+  {
+    "id": "11279",
+    "name": "Triston Casas",
+    "tier": 7,
+    "positions": [
+      "1B"
+    ],
+    "llim": "11",
+    "rlim": "",
+    "durability": "F"
+  },
+  {
+    "id": "12808",
+    "name": "Andruw Monasterio",
+    "tier": 7,
+    "positions": [
+      "1B",
+      "2B",
+      "3B",
+      "SS"
+    ],
+    "llim": "44",
+    "rlim": "82",
+    "durability": "B"
+  },
+  {
+    "id": "11437",
+    "name": "Jhonny Pereda",
+    "tier": 7,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "48",
+    "durability": "B"
+  },
+  {
+    "id": "12710",
+    "name": "Jose Fermin",
+    "tier": 7,
+    "positions": [
+      "2B",
+      "3B",
+      "LF",
+      "RF"
+    ],
+    "llim": "10",
+    "rlim": "50",
+    "durability": "B"
+  },
+  {
+    "id": "12556",
+    "name": "Carson Williams",
+    "tier": 7,
+    "positions": [
+      "SS"
+    ],
+    "llim": "33",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "10505",
+    "name": "Alex Verdugo",
+    "tier": 7,
+    "positions": [
+      "LF"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13256",
+    "name": "Hayden Senger",
+    "tier": 7,
+    "positions": [
+      "C"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "12664",
+    "name": "Bryce Johnson",
+    "tier": 7,
+    "positions": [
+      "LF",
+      "CF",
+      "RF"
+    ],
+    "llim": "30",
+    "rlim": "46",
+    "durability": "B"
+  },
+  {
+    "id": "13002",
+    "name": "Joey Loperfido",
+    "tier": 7,
+    "positions": [
+      "LF",
+      "RF"
+    ],
+    "llim": "20",
+    "rlim": "76",
+    "durability": "B"
+  },
+  {
+    "id": "9991",
+    "name": "Gio Urshela",
+    "tier": 7,
+    "positions": [
+      "1B",
+      "3B"
+    ],
+    "llim": "41",
+    "rlim": "",
+    "durability": "C"
+  },
+  {
+    "id": "12116",
+    "name": "Ha-Seong Kim",
+    "tier": 7,
+    "positions": [
+      "2B",
+      "SS"
+    ],
+    "llim": "56",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "11359",
+    "name": "Nick Allen",
+    "tier": 7,
+    "positions": [
+      "SS"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "11642",
+    "name": "Abraham Toro",
+    "tier": 7,
+    "positions": [
+      "1B"
+    ],
+    "llim": "",
+    "rlim": "",
+    "durability": "B"
+  },
+  {
+    "id": "13070",
+    "name": "Mickey Gasper",
+    "tier": 7,
+    "positions": [
+      "C",
+      "1B",
+      "2B",
+      "LF"
+    ],
+    "llim": "32",
+    "rlim": "",
+    "durability": "B"
+  }
+]
